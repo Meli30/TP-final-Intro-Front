@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!--Estilos css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Favicons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon.png">
+    <!--Link iconos-->
+    <script src="https://kit.fontawesome.com/c21e2c2f2d.js" crossorigin="anonymous"></script>
+    <title>Cobayolandia</title>
 </head>
+
 <body>
-    
+    <!--Barra de Navegación-->
+    <header class="hero">
+        <nav>
+            <div class="logo">
+                <img src="imagenes/favicon.png" alt="logo">
+                <a href="#">Cobayolandia</a>
+            </div>
+            <!--menu hamburguesa-->
+            <div class="icon-menu" id="menu">
+                <i class="fa-solid fa-bars" id="open-menu"></i>
+                <i class="fa-solid fa-xmark" style="display: none;" id="close-menu"></i>
+            </div>
+            <ul class="list" id="listItems">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#information">Información</a></li>
+                <li><a href="#product">Productos</a></li>
+                <li><a href="#us">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+
+            <div class="img-container">
+                <picture>
+                    <img src="imagenes/Cobayo.jpg" alt="cobayo">
+                </picture>
+            </div>
+
+            <div class="text-container">
+                <h1>¿Quieres un cobayo? <br> Y no sabes nada de ellos <br> <span>Nosotros te ayudamos</span></h1>
+                <p>Te ofrecemos los mejores productos, consejos e información para cuidar tu amiguito</p>
+                <div class="btns-container">
+                    <a class="btn" href="#home">Ver Más</a>
+                    <a class="btn-btn" href="#">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
 </body>
+
+<script src="main.js"></script>
+
 </html>

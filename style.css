@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*fuente de google*/
   }
   
   ul {
@@ -62,7 +61,7 @@
   }
 
   /*banner*/
-.container {
+  .container {
     display: flex;
     justify-content: space-evenly;
   }
@@ -171,10 +170,253 @@
     border-radius: 20% 80% 23% 77% / 82% 20% 80% 18%
   }
 
+  /*Sección 2*/
+  .Information {
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(123, 231, 123);
+  }
+
+ .information-container h1 {
+   font-size: 1.5rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.information-container p {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+/*Anatomia*/
+.anatomy-information {
+  text-align: start;
+}
+
+.anatomy-information h1 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+  text-align: center;
+}
+
+.anatomy-information p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.anatomy-information img {
+  height: 20rem;
+  width: 20rem;
+}
+
+picture{
+  display: flex;
+  justify-content: center;
+}
+
+/*Alimentación*/
+.feeding-information {
+  text-align: start;
+}
+
+.feeding-information h1 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+  text-align: center;
+}
+
+.feeding-information p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.feeding-information img {
+  height: 20rem;
+  width: 20rem;
+}
+
+/*Habitat*/
+.habitat-information {
+  text-align: start;
+}
+
+.habitat-information h1 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+  text-align: center;
+}
+
+.habitat-information h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.habitat-information p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.habitat-information img {
+  height: 20rem;
+  width: 20rem;
+}
+
+/*Razas*/
+.breeds-information {
+  text-align: star;
+}
+
+.breeds-information h1 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+}
+
+.breeds-information p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.cards {
+  width: 18rem;
+  box-shadow: 0 0 10px;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  width: 14rem;
+  height: 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: rgb(71, 151, 221);
+}
+
+button:hover {
+  width: 9rem;
+  height: 3rem;
+}
+
+/*Pelo corto*/
+.short-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.short-cards h5 {
+  font-size: 2rem;
+}
+
+.short-cards p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.short-cards img {
+  width: 16rem;
+  height: 20rem;
+}
+
+/*Pelo largo*/
+.long-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-content: center;
+}
+
+.long-cards h5 {
+  font-size: 2rem;
+}
+
+.long-cards p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.long-cards img {
+  width: 16rem;
+  height: 20rem;
+}
+
+/*sin pelo*/
+.hairless-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hairless-cards h5 {
+  font-size: 2rem;
+}
+
+.hairless-cards p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.hairless-cards img {
+  width: 16rem;
+  height: 20rem;
+}
+
+.title-cards {
+  font-size: 2.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+
+/*un color*/
+.color-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+}
+
+.color-cards img {
+  width: 16rem;
+  height: 20rem;
+}
+
+.color-cards h5 {
+  font-size: 1.5rem;
+}
+
+.color-cards p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* mas colores*/
+.more-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.more-cards h5 {
+  font-size: 1.5rem;
+}
+
+.more-cards p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.more-cards img {
+  width: 16rem;
+  height: 20rem;
+}
 
 
-
-  /*media query pantalla max-width: 767px*/
+ /*media query pantalla max-width: 767px*/
 @media screen and (max-width:767px) {
 
    /*Header*/
@@ -260,7 +502,7 @@
 
   .text-container span{
     color: red;
-}
+ }
   
   .text-container p {
     padding: 1rem;
@@ -294,14 +536,16 @@
   } 
 
   /*Seccion 1*/
-
   .Home {
     background: orange;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .home-container {
     padding: 1rem;
+
   }
 
   .home-container h1 {
@@ -315,8 +559,16 @@
     font-size: 1rem;
   }
 
+
+  .home-primary {
+    background-color: rgb(228, 192, 125);
+    display: flex;
+    flex-direction: column;
+    
+  }
+
   .home-title h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 1rem;
   }
 
@@ -325,15 +577,301 @@
     text-align: left;
     margin: 0.5rem;
   }
-
-  .home-img {
-    display: flex;
-    justify-content: center;
-  }
-
+ 
   .home-img img {
     border-radius: 20% 80% 23% 77% / 82% 20% 80% 18%
   }
+
+  /*Sección 2*/
+  .Information {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(123, 231, 123);
+  }
+
+  .information-container h1 {
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+
+  .information-container p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  /*Anatomia*/
+ .anatomy-information{
+   padding-bottom: 0.5rem;
+  }
+
+  .anatomy-information h1 {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(156, 245, 245);
+  }
+
+  .anatomy-information p {
+    font-size: 1rem;
+   padding: 0.5rem;
+  }
+
+  .anatomy-information img {
+    height: 12rem;
+    width: 18rem;
+  }
+
+  /*Alimentación*/
+  .feeding-information{
+    padding-bottom: 0.5rem;
+  }
+
+  .feeding-information h1 {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(156, 245, 245);
+  }
+
+  .feeding-information p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .feeding-information img {
+    height: 12rem;
+    width: 18rem;
+  }
+
+  /*Habitat*/
+  .habitat-information {
+    padding-bottom: 0.5rem;
+  }
+
+  .habitat-information h1{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(156, 245, 245);
+  }
+
+  .habitat-information h2{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .habitat-information p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .habitat-information img {
+    height: 12rem;
+    width: 18rem;
+  }
+
+  /*Razas*/
+  .breeds-information {
+    padding-top: 0.5rem;
+  }
+
+  .breeds-information h1 {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(156, 245, 245);
+    text-align: center;
+  }
+
+  .breeds-information p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .title-cards{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    box-shadow: 0 0 10px;
+    border-radius: 1rem;
+  }
+
+  .body-cards{
+    padding-left: 0.5rem;
+    text-align: center;
+  }
+
+  button {
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: rgb(71, 151, 221);
+  }
+
+  button:hover {
+    width: 9rem;
+    height: 3rem;
+  }
+
+  /*Pelo corto*/
+  .short-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .short-cards h5 {
+    font-size: 1.5rem;
+  }
+  
+  .short-cards p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .short-cards img {
+    width: 8rem;
+    height: 10rem;
+  }
+
+  /*Pelo largo*/
+  .long-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .long-cards h5 {
+    font-size: 1.5rem;
+  }
+  
+  .long-cards p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .long-cards img {
+    width: 8rem;
+    height: 10rem;
+  }
+
+  /*sin pelo*/
+  .hairless-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hairless-cards h5{
+    font-size: 1.5rem;
+  }
+
+  .hairless-cards p{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .hairless-cards img{
+    width: 8rem;
+    height: 10rem;
+  }
+
+  /*Variante de razas*/
+  .breed-variant{
+    padding-top: 1rem;
+  }
+
+  .breed-variant li{
+    text-align: center;
+    padding: 0.3rem;
+  }
+
+  .breed-variant p{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  /*patrones de mas colores*/
+  .colors-patterns{
+    padding-top: 1rem;
+  }
+
+  .colors-patterns li{
+    text-align: center;
+    padding: 0.3rem;
+  }
+
+  .colors-patterns p{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  /*patrones un color*/
+  .color-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .color-cards img {
+    width: 8rem;
+    height: 10rem;
+  }
+
+  .color-cards h5 {
+    font-size: 1.5rem;
+  }
+
+  .color-cards p {
+    font-size: 1rem;
+  }
+
+  /*patrones  mas colores*/
+  .more-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .more-cards h5 {
+    font-size: 1.5rem;
+  }
+
+  .more-cards p {
+    font-size: 0.9rem;
+  }
+
+  .more-cards img {
+    width: 8rem;
+    height: 10rem;
+  }
+
+ /*color de ojos*/
+  .eye-colors{
+    padding-top: 0.5rem;
+   }
+ 
+   .eye-colors li{
+     text-align: center;
+     padding: 0.3rem;
+   }
+ 
+   .eye-colors p{
+     font-size: 1rem;
+     padding: 0.5rem;
+   }
+
 }
 /*Pantallas 768px and 1023px*/
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -373,7 +911,7 @@
 
   .container {
    display: flex;
-   justify-content: space-between;
+   flex-direction: space-between;
   }
 
   .img-container{
@@ -424,8 +962,7 @@
 
 
    /*Seccion 1*/
-
-   .Home {
+  .Home {
     background: orange;
     text-align: center;
     padding: 1rem;
@@ -466,95 +1003,390 @@
   .home-img img {
     border-radius: 20% 80% 23% 77% / 82% 20% 80% 18%
   }
+
+   /*Sección 2*/
+.Information {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgb(123, 231, 123);
+}
+
+.information-container h1 {
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.information-container p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/*Anatomia*/
+.anatomy-information{
+ padding-bottom: 0.5rem;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.anatomy-information h1 {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+}
+
+.anatomy-information p {
+  font-size: 1rem;
+ padding: 0.5rem;
+}
+
+.anatomy-information img {
+  height: 12rem;
+  width: 18rem;
+}
+
+/*Alimentación*/
+.feeding-information{
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feeding-information h1 {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+}
+
+.feeding-information p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.feeding-information img {
+  height: 12rem;
+  width: 18rem;
+}
+
+/*Habitat*/
+.habitat-information {
+  padding-bottom: 0.5rem;
+  display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.habitat-information h1{
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+}
+
+.habitat-information h2{
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.habitat-information p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.habitat-information img {
+  height: 12rem;
+  width: 18rem;
+}
+
+/*Razas*/
+.breeds-information {
+  padding-bottom: 0.5rem;
+}
+
+.breeds-information h1 {
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+  text-align: center;
+}
+
+.breeds-information p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.title-cards{
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  padding-top: 2rem;
+}
+
+.cards {
+  display: flex;
+  box-shadow: 0 0 10px;
+  border-radius: 1rem;
+}
+
+.body-cards{
+  padding-left: 0.5rem;
+  text-align: center;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: rgb(71, 151, 221);
+}
+
+button:hover {
+  width: 9rem;
+  height: 3rem;
+}
+
+/*Pelo corto*/
+.short-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  
+}
+.short-cards h5 {
+  font-size: 1.5rem;
+}
+
+.short-cards p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.short-cards img {
+  width: 8rem;
+  height: 10rem;
+}
+
+/*Pelo largo*/
+.long-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.long-cards h5 {
+  font-size: 1.5rem;
+}
+
+.long-cards p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.long-cards img {
+  width: 8rem;
+  height: 10rem;
+}
+
+/*sin pelo*/
+.hairless-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hairless-cards h5{
+  font-size: 1.5rem;
+}
+
+.hairless-cards p{
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.hairless-cards img{
+  width: 8rem;
+  height: 10rem;
+}
+
+/*Variante de razas*/
+.breed-variant{
+  padding-top: 1rem;
+}
+
+.breed-variant li{
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.breed-variant p{
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/*patrones de mas colores*/
+.colors-patterns{
+  padding-top: 1rem;
+}
+
+.colors-patterns li{
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.colors-patterns p{
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/*patrones un color*/
+.color-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+.color-cards img {
+  width: 8rem;
+  height: 10rem;
+}
+
+.color-cards h5 {
+  font-size: 1.5rem;
+}
+
+.color-cards p {
+  font-size: 1rem;
+}
+
+/*patrones  mas colores*/
+.more-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.more-cards h5 {
+  font-size: 1.5rem;
+}
+
+.more-cards p {
+  font-size: 1rem;
+}
+
+.more-cards img {
+  width: 8rem;
+  height: 10rem;
+}
+
+/*color de ojos*/
+.eye-colors{
+  padding-top: 0.5rem;
+ }
+
+ .eye-colors li{
+   text-align: center;
+   padding: 0.3rem;
+ }
+
+ .eye-colors p{
+   font-size: 1rem;
+   padding: 0.5rem;
+ }
 }
 
   /*Pantalla 1024px*/
   @media screen and (min-width:1024px) {
   
     
-    .icon-menu {
-      display: none;
-    }
+  .icon-menu {
+    display: none;
+  }
     
-    nav, nav ul {
-      display: flex;
-      justify-content: space-between;
-      color: black;
-      align-items: center;
-    }
+  nav, nav ul {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+  }
     
-    nav ul li a {
-      text-decoration: none;
-      color: black;
-    }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
     
-    nav {
-      height: 60px;
-      padding: 10px 20px;
-    }
+  nav {
+    height: 60px;
+    padding: 10px 20px;
+  }
   
-    .container {
-     display:flex;
-     justify-content: center;
-     align-items: center;
-    }
+  .container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .img-container{
-      height: 28rem;
-      width: 22rem;
-    }
+  .img-container{
+    height: 28rem;
+    width: 22rem;
+  }
   
-    .img-container img {
-        height: 28rem;
-        width: 20rem;
-    }
+  .img-container img {
+    height: 28rem;
+    width: 20rem;
+  }
 
-    .text-container h1 {
-      color: black;
-      text-align: center;
-      font-size: 3rem;
-      padding: 2rem;
-    }
+  .text-container h1 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+  }
   
-    .text-container p {
-      font-size: 1.5rem;
-      color: black;
-      padding: 2rem;
-    }
+  .text-container p {
+    font-size: 1.5rem;
+    color: black;
+    padding: 2rem;
+  }
   
-    .btns-container {
-     display: flex;
-     justify-content: center;
-     gap: 1rem;
-     padding: 1.5rem;
-     text-align: center;
-    }
+  .btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
   
-    .btn {
-      padding: 0.5rem;
-      border-radius:30px;
-      width: 18rem;
-      height: 3rem;
-      color: black;
-      font-size: 1.5rem;
-      
-    }
+  .btn {
+    padding: 0.5rem;
+    border-radius:30px;
+    width: 18rem;
+    color: black;
+   
+  }
   
-    .btn-btn {
-      padding: 0.5rem;
-      border-radius: 30px;
-      width: 18rem;
-      height: 3rem;
-      color: aliceblue;
-      text-decoration: none;
-      font-size: 1.5rem;
-    }
+  .btn-btn {
+    padding: 0.5rem;
+    border-radius: 30px;
+    width: 18rem;
+    color: aliceblue;
+    text-decoration: none;
+  }
 
      /*Seccion 1*/
-
   .Home {
     background: orange;
-    height: 100vh;
   }
 
   .home-container {
@@ -588,4 +1420,298 @@
   .home-img img {
     border-radius: 20% 80% 23% 77% / 82% 20% 80% 18%;
   }
+
+  /*Sección 2*/
+.Information {
+  background-color: rgb(123, 231, 123);
+}
+
+.information-container h1 {
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+.information-container p {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+/*Anatomia*/
+.anatomy-information{
+ padding-bottom: 0.5rem;
+}
+
+.anatomy-information h1 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+  padding: 1rem;
+}
+
+.anatomy-information p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.anatomy-information img {
+  height: 14rem;
+  width: 20rem;
+}
+
+/*Alimentación*/
+.feeding-information{
+  padding-bottom: 0.5rem;
+}
+
+.feeding-information h1 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+  padding: 1rem;
+}
+
+.feeding-information p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.feeding-information img {
+  height: 14rem;
+  width: 20rem;
+}
+
+/*Habitat*/
+.habitat-information {
+  padding-bottom: 0.5rem;
+}
+
+.habitat-information h1{
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+  padding: 1rem;
+}
+
+.habitat-information h2{
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.habitat-information p {
+  font-size: 1.5rem;
+}
+
+.habitat-information img {
+  height: 12rem;
+  width: 18rem;
+}
+
+/*Razas*/
+.breeds-information {
+  padding-bottom: 0.5rem;
+}
+
+.breeds-information h1 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 245, 245);
+  text-align: center;
+  padding: 1rem;
+}
+
+.breeds-information p {
+  font-size: 1.5rem;
+}
+
+.title-cards{
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  padding-top: 2rem;
+}
+
+.cards {
+  display: flex;
+  box-shadow: 0 0 10px;
+  border-radius: 1rem;
+}
+
+.body-cards{
+  padding-left: 0.5rem;
+  text-align: center;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: rgb(71, 151, 221);
+}
+
+button:hover {
+  width: 9rem;
+  height: 3rem;
+}
+
+/*Pelo corto*/
+.short-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  
+}
+.short-cards h5 {
+  font-size: 1.5rem;
+}
+
+.short-cards p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.short-cards img {
+  width: 8rem;
+  height: 10rem;
+}
+
+/*Pelo largo*/
+.long-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.long-cards h5 {
+  font-size: 1.5rem;
+}
+
+.long-cards p {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.long-cards img {
+  width: 8rem;
+  height: 10rem;
+}
+
+/*sin pelo*/
+.hairless-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.hairless-cards h5{
+  font-size: 1.5rem;
+}
+
+.hairless-cards p{
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.hairless-cards img{
+  width: 8rem;
+  height: 10rem;
+}
+
+/*Variante de razas*/
+.breed-variant{
+  padding-top: 1rem;
+}
+
+.breed-variant li{
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.breed-variant p{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+/*patrones de mas colores*/
+.colors-patterns{
+  padding-top: 1rem;
+}
+
+.colors-patterns li{
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.colors-patterns p{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+/*patrones un color*/
+.color-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.color-cards img {
+  width: 8rem;
+  height: 10rem;
+}
+
+.color-cards h5 {
+  font-size: 1.5rem;
+}
+
+.color-cards p {
+  font-size: 1rem;
+}
+
+/*patrones  mas colores*/
+.more-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.more-cards h5 {
+  font-size: 1.5rem;
+}
+
+.more-cards p {
+  font-size: 1rem;
+}
+
+.more-cards img {
+  width: 8rem;
+  height: 10rem;
+}
+
+/*color de ojos*/
+.eye-colors{
+  padding-top: 0.5rem;
+ }
+
+ .eye-colors li{
+   text-align: center;
+   padding: 0.3rem;
+ }
+
+ .eye-colors p{
+   font-size: 1.5rem;
+   padding: 0.5rem;
+ }
+
 }

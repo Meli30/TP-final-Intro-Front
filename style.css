@@ -129,12 +129,12 @@
   /*seccion 1*/
 
   .Home {
-    background: orange;
     display: grid;
   }
 
   .home-container {
     padding: 0.1;
+    background-color: rgb(212, 215, 0);
   }
 
   .home-container h1 {
@@ -149,7 +149,8 @@
 
   .home-primary {
     display: block;
-    background-color: rgb(228, 192, 125);
+    background-color: rgb(221, 223, 0);
+    border-top:0.1rem solid rgb(145, 96, 5)
   }
 
   .home-title h4 {
@@ -174,7 +175,7 @@
   .Information {
    display: flex;
    flex-direction: column;
-   background-color: rgb(123, 231, 123);
+   background-color: rgb(170, 204, 0);
   }
 
  .information-container h1 {
@@ -195,7 +196,6 @@
 .anatomy-information h1 {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
   text-align: center;
 }
 
@@ -222,7 +222,6 @@ picture{
 .feeding-information h1 {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
   text-align: center;
 }
 
@@ -244,7 +243,6 @@ picture{
 .habitat-information h1 {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
   text-align: center;
 }
 
@@ -271,7 +269,6 @@ picture{
 .breeds-information h1 {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
 }
 
 .breeds-information p {
@@ -286,19 +283,6 @@ picture{
   padding: 0.5rem;
 }
 
-button {
-  width: 14rem;
-  height: 2rem;
-  border: none;
-  border-radius: 2rem;
-  background-color: rgb(71, 151, 221);
-}
-
-button:hover {
-  width: 9rem;
-  height: 3rem;
-}
-
 /*Pelo corto*/
 .short-cards {
   display: flex;
@@ -309,11 +293,12 @@ button:hover {
 
 .short-cards h5 {
   font-size: 2rem;
+  padding: 0.5rem;
 }
 
 .short-cards p {
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .short-cards img {
@@ -331,11 +316,12 @@ button:hover {
 
 .long-cards h5 {
   font-size: 2rem;
+  padding: 0.5rem;
 }
 
 .long-cards p {
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .long-cards img {
@@ -353,11 +339,12 @@ button:hover {
 
 .hairless-cards h5 {
   font-size: 2rem;
+  padding: 0.5rem;
 }
 
 .hairless-cards p {
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .hairless-cards img {
@@ -387,6 +374,7 @@ button:hover {
 
 .color-cards h5 {
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .color-cards p {
@@ -403,6 +391,7 @@ button:hover {
 
 .more-cards h5 {
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .more-cards p {
@@ -416,13 +405,104 @@ button:hover {
 }
 
 
+ /*Seccion 3*/
+
+ .product-container{
+  text-align: center;
+  background-color: rgb(128, 185, 24) ;
+ }
+
+ .product-container h1{
+  padding: 2rem;
+  font-size: 3rem;
+ }
+
+ .product-container p{
+  font-size: 2rem;
+  padding: 2rem;
+ }
+
+ .product-container ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+ }
+
+ .product-container button{
+  background-color:black;
+  font-size: 1.2rem;
+  width: 16rem;
+  cursor: pointer;
+ }
+
+ .product-container button:hover{
+  width: 17rem;
+}
+
+.product-container a{
+  color: white;
+}
+
+/*Tarjetas de productos*/
+
+.product-category{
+  padding: 1rem;
+
+}
+
+.product-category h2{
+  padding: 2rem;
+  font-size: 2.5rem;
+ }
+
+
+ .product-subcategory{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  }
+
+ .products{
+  height: 25rem; 
+  width: 20rem; 
+  background-color: rgb(122, 184, 115);
+ }
+
+ .product-img figure{
+  width: 18rem;
+  height: 22rem;
+ }
+
+ .product-body img{
+  width: 18rem;
+  height: 18rem;
+  padding: 1rem;
+ 
+ }
+
+ .product-body h3{
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5rem;
+ }
+
+ .product-body button{
+  font-size: 1rem;
+  width: 12rem;
+  background-color: black;
+  color: white;
+ }
+
+ 
+
+
+
  /*media query pantalla max-width: 767px*/
 @media screen and (max-width:767px) {
 
    /*Header*/
-  .hero {
-    background-color: rgb(190, 224, 76);
-  }
   
   .logo {
     display: flex;
@@ -465,6 +545,7 @@ button:hover {
 
   #listItems li{
     padding: 1rem;
+    cursor: pointer;
    }
 
   #listItems li:hover{
@@ -537,10 +618,8 @@ button:hover {
 
   /*Seccion 1*/
   .Home {
-    background: orange;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .home-container {
@@ -561,7 +640,6 @@ button:hover {
 
 
   .home-primary {
-    background-color: rgb(228, 192, 125);
     display: flex;
     flex-direction: column;
     
@@ -587,7 +665,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    background-color: rgb(123, 231, 123);
   }
 
   .information-container h1 {
@@ -609,7 +686,6 @@ button:hover {
   .anatomy-information h1 {
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(156, 245, 245);
   }
 
   .anatomy-information p {
@@ -630,7 +706,6 @@ button:hover {
   .feeding-information h1 {
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(156, 245, 245);
   }
 
   .feeding-information p {
@@ -651,7 +726,6 @@ button:hover {
   .habitat-information h1{
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(156, 245, 245);
   }
 
   .habitat-information h2{
@@ -678,7 +752,6 @@ button:hover {
   .breeds-information h1 {
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(156, 245, 245);
     text-align: center;
   }
 
@@ -706,19 +779,6 @@ button:hover {
     text-align: center;
   }
 
-  button {
-    width: 6rem;
-    height: 2rem;
-    border: none;
-    border-radius: 2rem;
-    background-color: rgb(71, 151, 221);
-  }
-
-  button:hover {
-    width: 9rem;
-    height: 3rem;
-  }
-
   /*Pelo corto*/
   .short-cards{
     display: flex;
@@ -729,6 +789,7 @@ button:hover {
 
   .short-cards h5 {
     font-size: 1.5rem;
+    padding: 0.5rem;
   }
   
   .short-cards p {
@@ -751,6 +812,7 @@ button:hover {
 
   .long-cards h5 {
     font-size: 1.5rem;
+    padding: 0.5rem;
   }
   
   .long-cards p {
@@ -773,6 +835,7 @@ button:hover {
 
   .hairless-cards h5{
     font-size: 1.5rem;
+    padding: 0.5rem;
   }
 
   .hairless-cards p{
@@ -872,6 +935,55 @@ button:hover {
      padding: 0.5rem;
    }
 
+   /*Seccion 3*/
+
+   .Products{
+    padding-top: 0.5rem;
+   }
+
+   .product-container{
+    text-align: center;
+   }
+
+   .product-container h1{
+    font-size: 2rem;
+   }
+
+   .product-container p{
+    font-size: 1rem;
+    padding: 0.5rem;
+   }
+
+   .product-container ul{
+    padding: 1rem;
+   }
+
+   .product-container button{
+    border-radius: 2rem;
+    border: none;
+    height: 2rem;
+    width: 14rem;
+   }
+
+   .product-container button:hover{
+    width: 15rem;
+   }
+
+   .product-category h2{
+    font-size: 1.8rem;
+    padding: 1rem;
+   }
+
+   .products{
+    height: 21rem;
+   }
+
+   .product-body img{
+    width: 14rem;
+    height: 14rem;
+   }
+ 
+
 }
 /*Pantallas 768px and 1023px*/
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -963,9 +1075,7 @@ button:hover {
 
    /*Seccion 1*/
   .Home {
-    background: orange;
     text-align: center;
-    padding: 1rem;
   }
 
   .home-container {
@@ -997,7 +1107,7 @@ button:hover {
   .home-img {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .home-img img {
@@ -1009,7 +1119,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: rgb(123, 231, 123);
 }
 
 .information-container h1 {
@@ -1034,7 +1143,6 @@ button:hover {
 .anatomy-information h1 {
   font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
 }
 
 .anatomy-information p {
@@ -1058,7 +1166,6 @@ button:hover {
 .feeding-information h1 {
   font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
 }
 
 .feeding-information p {
@@ -1082,7 +1189,6 @@ button:hover {
 .habitat-information h1{
   font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
 }
 
 .habitat-information h2{
@@ -1109,7 +1215,6 @@ button:hover {
 .breeds-information h1 {
   font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
   text-align: center;
 }
 
@@ -1142,7 +1247,6 @@ button {
   height: 2rem;
   border: none;
   border-radius: 2rem;
-  background-color: rgb(71, 151, 221);
 }
 
 button:hover {
@@ -1422,9 +1526,6 @@ button:hover {
   }
 
   /*Sección 2*/
-.Information {
-  background-color: rgb(123, 231, 123);
-}
 
 .information-container h1 {
   font-size: 3rem;
@@ -1446,7 +1547,6 @@ button:hover {
 .anatomy-information h1 {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
   padding: 1rem;
 }
 
@@ -1468,7 +1568,6 @@ button:hover {
 .feeding-information h1 {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
   padding: 1rem;
 }
 
@@ -1490,7 +1589,6 @@ button:hover {
 .habitat-information h1{
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
   padding: 1rem;
 }
 
@@ -1517,7 +1615,6 @@ button:hover {
 .breeds-information h1 {
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(156, 245, 245);
   text-align: center;
   padding: 1rem;
 }
@@ -1550,7 +1647,6 @@ button {
   height: 2rem;
   border: none;
   border-radius: 2rem;
-  background-color: rgb(71, 151, 221);
 }
 
 button:hover {

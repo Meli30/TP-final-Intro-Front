@@ -607,6 +607,35 @@ picture{
  
  }
 
+ /*footer*/
+
+ footer{
+  background-color: rgb(61, 59, 59);
+ }
+
+ footer p{
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+ }
+ 
+ .social-networks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ }
+
+ .social-networks div{
+  padding: 1.3rem;
+  border-bottom: 0.1rem solid;
+ }
+
+ .social-networks i{
+  color: white;
+ }
+
  /*media query pantalla max-width: 767px*/
 @media screen and (max-width:767px) {
 
@@ -1041,7 +1070,6 @@ picture{
    }
 
    /*Seccion 3*/
-
    .Products{
     padding-top: 0.5rem;
    }
@@ -1118,9 +1146,9 @@ picture{
    }
 
    /*Seccion formulario*/
- .contact-container{
- display: flex;
- flex-direction: column;
+  .contact-container{
+   display: flex;
+   flex-direction: column;
  }
 
  form h1{
@@ -1159,6 +1187,14 @@ picture{
  
  }
 
+ /*footer*/
+
+ .social-networks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ }
 }
 /*Pantallas 768px and 1023px*/
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -1198,7 +1234,6 @@ picture{
 
   .container {
    display: flex;
-   flex-direction: space-between;
   }
 
   .img-container{
@@ -1882,6 +1917,7 @@ button:hover {
   justify-content: space-evenly;
   padding: 1rem;
 }
+
 .long-cards h5 {
   font-size: 1.5rem;
 }
@@ -2017,4 +2053,4 @@ button:hover {
 .us-text h3 {
   font-size: 2rem;
   padding: 0.5rem;
-}
+}}

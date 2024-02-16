@@ -543,6 +543,70 @@ picture{
   text-align: left;
  }
 
+
+ /*Seccion formulario*/
+
+ .Contact{
+  background-color: rgb(0, 127, 95);
+ }
+
+ .contact-container{
+ display: flex;
+ justify-content: space-around;
+ padding: 2rem;
+ }
+ 
+
+ form{
+  box-shadow: 0 0 0.2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+   background-color: rgb(122, 184, 115);
+ }
+
+ form h1{
+  font-size: 2rem;
+ }
+ form div{
+  padding: 0.5rem;
+ }
+
+ label{
+  display: flex;
+  justify-content: left;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+ }
+
+ input{
+  width: 20rem;
+  height: 2rem;
+ }
+
+ textarea{
+  width: 20rem;
+ }
+
+ .submit{
+  width: 10rem;
+ }
+
+ .form-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  margin: 2rem;
+  height: 20rem;
+ }
+
+ .form-text h3{
+ font-size: 1.5rem;
+ 
+ }
+
  /*media query pantalla max-width: 767px*/
 @media screen and (max-width:767px) {
 
@@ -668,7 +732,6 @@ picture{
 
   .home-container {
     padding: 1rem;
-
   }
 
   .home-container h1 {
@@ -682,11 +745,9 @@ picture{
     font-size: 1rem;
   }
 
-
   .home-primary {
     display: flex;
     flex-direction: column;
-    
   }
 
   .home-title h4 {
@@ -1055,6 +1116,48 @@ picture{
     text-align: center;
     font-size: rem;
    }
+
+   /*Seccion formulario*/
+ .contact-container{
+ display: flex;
+ flex-direction: column;
+ }
+
+ form h1{
+  font-size: 1.5rem;
+ }
+
+ label{
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+ 
+ input{
+  width: 12rem;
+  height: 1.5rem;
+ }
+
+ textarea{
+  width: 12rem;
+ }
+
+ .submit{
+  border-radius: 2rem;
+  border: none;
+  width: 8rem;
+  height: 2rem;
+ }
+
+ .form-text{
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem
+ }
+
+ .form-text h3{
+ font-size: 1.5rem;
+ 
+ }
 
 }
 /*Pantallas 768px and 1023px*/
@@ -1495,7 +1598,15 @@ button:hover {
   padding: 0.5rem;
 }
 
+/*Seccion formulario*/
 
+
+ .form-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+ }
 }
 
   /*Pantalla 1024px*/

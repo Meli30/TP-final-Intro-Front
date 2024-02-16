@@ -636,6 +636,65 @@ picture{
   color: white;
  }
 
+
+ /*Boton de ir arriba*/
+
+.scroll-top-container{
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width:1rem ;
+  height: 2rem;
+  z-index: -1;
+  
+}
+.scroll-top-button{
+  width:0rem ;
+  height:0rem;
+  cursor: pointer;
+  transition: .2s;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%) ;
+  z-index: -1;
+}
+.scroll-top-button i{
+  position: absolute;
+  font-size: 1.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: black;
+  transition: .2s;
+}
+.show{
+  z-index: 10;
+}
+.show .scroll-top-button{
+  animation: popop .3s ease ease-in-out;
+  width: 3rem;
+  height: 3rem;
+  z-index: 1;
+}
+.show i{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+ @keyframes popop{
+  0%{
+      width: 0rem;
+      height: 0rem;
+}
+  50%{
+     width: 8rem;
+     height: 8rem; 
+}
+  100%{
+      width: 6.6rem;
+      height: 6.6rem;
+}
+}
+
  /*media query pantalla max-width: 767px*/
 @media screen and (max-width:767px) {
 
@@ -1195,6 +1254,21 @@ picture{
   align-items: center;
   color: white;
  }
+
+ /*Boton de ir arriba*/
+ .scroll-top-container{
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  width:1rem ;
+  height: 2rem;
+  z-index: -1;
+}
+
+.show{
+  z-index:10;
+}
+
 }
 /*Pantallas 768px and 1023px*/
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -1642,6 +1716,21 @@ button:hover {
   align-items: flex-start;
   padding: 2rem;
  }
+
+ /*Boton d eir arriba*/
+ /*Boton de ir arriba*/
+ .scroll-top-container{
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  width:1rem ;
+  height: 2rem;
+  z-index: -1;
+}
+
+.show{
+  z-index:10;
+}
 }
 
   /*Pantalla 1024px*/
